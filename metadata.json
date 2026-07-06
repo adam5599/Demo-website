@@ -1,0 +1,6 @@
+{
+  "name": "On Corner Real Estate Services",
+  "description": "On Corner Real Estate Services (على زاوية للخدمات العقارية) is a premium real estate agency website in Riyadh, Saudi Arabia, offering luxury properties, property management, and consulting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
