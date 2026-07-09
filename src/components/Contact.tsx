@@ -86,7 +86,7 @@ export default function Contact({ isArabic, isDarkMode }: ContactProps) {
 
             {/* Phone Card */}
             <a 
-              href="tel:+966500080103" 
+              href="tel:+96877155997" 
               className={`p-5 rounded-2xl border transition-all duration-300 flex gap-4 items-start group ${
                 isDarkMode ? 'bg-slate-900/40 border-slate-800/80 hover:border-luxury-gold/30' : 'bg-white border-slate-100 hover:border-luxury-gold/20 shadow-sm'
               }`}
@@ -106,7 +106,7 @@ export default function Contact({ isArabic, isDarkMode }: ContactProps) {
 
             {/* WhatsApp Card */}
             <a 
-              href="https://wa.me/966500080103" 
+              href="https://wa.me/96877155997" 
               target="_blank" 
               rel="noreferrer"
               className={`p-5 rounded-2xl border transition-all duration-300 flex gap-4 items-start group ${

@@ -2,6 +2,34 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <!-- Prevent read-only window.fetch assignment errors in sandbox/iframe environments -->
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return originalFetch;
+            },
+            set: function(value) {
+              try {
+                Object.defineProperty(window, 'fetch', {
+                  value: value,
+                  writable: true,
+                  configurable: true,
+                  enumerable: true
+                });
+              } catch (e) {
+                console.warn('Failed to define window.fetch value:', e);
+              }
+            },
+            configurable: true
+          });
+        } catch (err) {
+          console.warn('Failed to patch window.fetch setter:', err);
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>على زاوية للخدمات العقارية | On Corner Real Estate Services</title>
     
